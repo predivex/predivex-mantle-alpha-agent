@@ -1,0 +1,26 @@
+{
+  "name": "predivex-mantle-alpha-agent",
+  "version": "0.1.0",
+  "description": "Open-source Mantle proof layer for the Predivex Alpha Agent hackathon demo.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "compile": "tsx ./src/compile.ts",
+    "deploy": "tsx ./src/deploy.ts",
+    "anchor": "tsx ./src/anchor-decisions.ts",
+    "dry-run": "tsx ./src/dry-run.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "record:demo": "npx --yes --package playwright node ./src/record-demo.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "ethers": "6.16.0",
+    "solc": "0.8.26"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.2"
+  }
+}
