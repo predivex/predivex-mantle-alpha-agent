@@ -51,7 +51,6 @@ Strong:
 
 Weak:
 
-- Current public GitHub access is not enough because the app repo is private from unauthenticated web requests.
 - Contract verification on Mantle Explorer still needs to be completed.
 - Deployment award asks for a 2+ minute video, so use the deployment demo file.
 - The contract records AI decision proofs, but does not itself run inference. Frame it as inference result written on-chain.
@@ -64,7 +63,7 @@ Weak:
 - Frontend demo publicly accessible: yes.
 - Deployment address included in DoraHacks: ready.
 - Demo video at least 2 minutes: yes, use `demo/predivex-mantle-alpha-agent-deployment-demo.mp4`.
-- Open-source GitHub repo with README: pending public sanitized repo.
+- Open-source GitHub repo with README: yes, use `https://github.com/ebinxdd/predivex-mantle-alpha-agent`.
 
 ## Participant Scan
 

@@ -105,7 +105,7 @@ The agent creates verifiable research artifacts only.
 
 7/ Demo video: `<add video link>`
 
-GitHub: `<add repo link>`
+GitHub: `https://github.com/ebinxdd/predivex-mantle-alpha-agent`
 
 Track: AI Alpha & Data.
 
