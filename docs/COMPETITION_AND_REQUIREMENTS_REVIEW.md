@@ -63,7 +63,7 @@ Weak:
 - Frontend demo publicly accessible: yes.
 - Deployment address included in DoraHacks: ready.
 - Demo video at least 2 minutes: yes, use `demo/predivex-mantle-alpha-agent-deployment-demo.mp4`.
-- Open-source GitHub repo with README: yes, use `https://github.com/ebinxdd/predivex-mantle-alpha-agent`.
+- Open-source GitHub repo with README: publish under `https://github.com/predivex/predivex-mantle-alpha-agent`.
 
 ## Participant Scan
 
