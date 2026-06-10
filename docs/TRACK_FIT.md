@@ -17,9 +17,9 @@ secondary lens.
 | --- | --- |
 | Technical implementation | Live API, live UI, deterministic proof hashing, Solidity registry, deploy and anchor scripts, and Mantle Sepolia transactions. |
 | Ecosystem contribution | Mantle is used as the public proof and reputation layer for AI market calls, not only as a passive deployment target. |
-| Product direction | Predivex is an existing prediction-market intelligence product with a path to subscriptions, alerts, API access, and a trader-concierge workflow. |
-| Differentiation | The project combines prediction-market intelligence, AI-ranked calls, trader-concierge guidance, proof hashes, on-chain anchoring, and post-anchor scoring into an auditable reputation feed. |
-| User experience | The public demo shows live scan metrics, ranked decisions, evidence, concierge next steps, proof hashes, Mantle status, and explorer links in one reviewable interface. |
+| Product direction | Predivex is an existing prediction-market intelligence product with a path to subscriptions, alerts, API access, and research-copilot workflows. |
+| Differentiation | The project combines prediction-market intelligence, AI-ranked calls, research briefs, proof hashes, on-chain anchoring, and post-anchor scoring into an auditable reputation feed. |
+| User experience | The public demo shows live scan metrics, ranked decisions, evidence, research-brief items, proof hashes, Mantle status, and explorer links in one reviewable interface. |
 
 ## AI Alpha & Data Fit
 
@@ -31,7 +31,7 @@ secondary lens.
 | Risk management | The demo does not execute trades or custody funds. Calls include confidence, evidence, liquidity, and scoring. The system records research artifacts and avoids automatic order execution. |
 | Data quality | The demo uses live Predivex market data plus ELFA market-intelligence enrichment when credits are available. |
 | Scalability | The architecture separates market scanning, decision hashing, on-chain anchoring, and frontend review, so more venues, signals, and data providers can be added without changing the proof contract. |
-| Trader concierge | The agent turns raw signals into an action plan: what to inspect, what to monitor, what outside context to read, which risk guardrails apply, and which Mantle proofs to audit. |
+| Research copilot | The agent turns raw signals into a research brief: what to inspect, what moved, what outside context matters, which risk boundary applies, and which Mantle proofs to audit. |
 
 ## Safety Boundary
 

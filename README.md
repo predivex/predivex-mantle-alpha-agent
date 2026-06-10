@@ -29,7 +29,7 @@ This repo is structured for hackathon review and automated screening:
 - Transaction-producing on-chain component: yes,
   `PredivexDecisionRegistry.recordDecision`.
 - Live AI/data output: yes, ranked prediction-market calls, ELFA enrichment,
-  and a trader-concierge action plan with its own proof hash.
+  and a research brief with its own proof hash.
 - Safety boundary: no custody, no order execution, no financial advice.
 
 Example anchored decisions:
@@ -104,9 +104,9 @@ git.
 
 Primary track: AI Alpha & Data.
 
-Positioning: Predivex is the prediction-market intelligence terminal and trader
-concierge; Mantle is the verifiable proof and reputation layer for AI market
-calls and agent advice artifacts.
+Positioning: Predivex is the prediction-market intelligence terminal and
+research copilot; Mantle is the verifiable proof and reputation layer for AI
+market calls and research artifacts.
 
 ## Safety Boundary
 
