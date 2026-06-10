@@ -9,7 +9,8 @@ review.
 - Public repository: `https://github.com/predivex/predivex-mantle-alpha-agent`
 - Live demo: `https://app.predivex.com/mantle-agent`
 - Live API: `https://app.predivex.com/api/mantle/alpha-agent`
-- Demo video:
+- Demo video: `https://youtu.be/9sgV45369Vo`
+- Backup demo video:
   `https://github.com/predivex/predivex-mantle-alpha-agent/blob/main/demo/predivex-mantle-alpha-agent-deployment-demo.mp4`
 - Contract:
   `0x7DA2bC98E2392810a1f088955C65c72EBc76692A`

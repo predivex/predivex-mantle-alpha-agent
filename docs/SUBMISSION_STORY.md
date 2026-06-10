@@ -110,7 +110,10 @@ feed.
 
 The agent creates verifiable research artifacts only.
 
-7/ Demo videos are included in the public repo:
+7/ Demo video:
+`https://youtu.be/9sgV45369Vo`
+
+Backup videos are included in the public repo:
 `demo/predivex-mantle-alpha-agent-demo.mp4`
 `demo/predivex-mantle-alpha-agent-deployment-demo.mp4`
 

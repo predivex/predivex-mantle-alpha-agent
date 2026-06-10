@@ -11,8 +11,7 @@ deployment/anchoring scripts, demo artifacts, and public documentation.
 - DoraHacks BUIDL: https://dorahacks.io/buidl/44565
 - App: https://app.predivex.com/mantle-agent
 - API: https://app.predivex.com/api/mantle/alpha-agent
-- Demo video:
-  https://github.com/predivex/predivex-mantle-alpha-agent/blob/main/demo/predivex-mantle-alpha-agent-deployment-demo.mp4
+- Demo video: https://youtu.be/9sgV45369Vo
 - Contract: `0x7DA2bC98E2392810a1f088955C65c72EBc76692A`
 - Explorer:
   https://explorer.sepolia.mantle.xyz/address/0x7DA2bC98E2392810a1f088955C65c72EBc76692A
@@ -25,7 +24,7 @@ This repo is structured for hackathon review and automated screening:
 - Public GitHub repository: yes.
 - Public live demo: yes, `https://app.predivex.com/mantle-agent`.
 - Public API endpoint: yes, `https://app.predivex.com/api/mantle/alpha-agent`.
-- Demo video: yes, committed under `demo/`.
+- Demo video: yes, https://youtu.be/9sgV45369Vo and committed under `demo/`.
 - Smart contract: yes, deployed on Mantle Sepolia.
 - Transaction-producing on-chain component: yes,
   `PredivexDecisionRegistry.recordDecision`.
@@ -88,6 +87,7 @@ git.
 
 ## Demo Videos
 
+- YouTube walkthrough: https://youtu.be/9sgV45369Vo
 - Social cut: `demo/predivex-mantle-alpha-agent-demo.mp4`
 - Deployment-award walkthrough:
   `demo/predivex-mantle-alpha-agent-deployment-demo.mp4`
