@@ -23,6 +23,8 @@ review.
 - The public API returns live ranked decisions.
 - The agent scans prediction-market data and detects cross-venue spreads plus
   momentum dislocations.
+- The trader concierge turns signals into inspect, monitor, context, risk, and
+  proof-audit actions with its own proof hash.
 - The live feed includes ELFA-powered market-intelligence enrichment when
   credits are available.
 - Each decision has a deterministic proof hash.

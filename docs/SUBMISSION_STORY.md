@@ -12,25 +12,28 @@ detect dislocations, and understand whether an AI signal has a real track
 record. Most AI trading demos stop at a black-box recommendation.
 
 Predivex already scans live prediction-market data across venues. The Mantle
-Alpha Agent turns that stream into auditable market calls. It detects
-cross-venue spreads and violent probability moves, generates a deterministic
-proof hash for each decision, anchors selected calls on Mantle Sepolia, and then
-scores the agent against later market movement.
+Alpha Agent turns that stream into a trader-concierge workflow. It detects
+cross-venue spreads and violent probability moves, generates ranked market
+calls, explains what to inspect or monitor next, creates deterministic proof
+hashes for both decisions and the concierge brief, anchors selected calls on
+Mantle Sepolia, and then scores the agent against later market movement.
 
 For Phase II, the live feed also includes ELFA-powered market-intelligence
 enrichment when credits are available. That makes the agent a stronger
 AI Alpha & Data submission: Predivex contributes prediction-market signal
 detection, while ELFA adds external narrative and token-context signals.
 
-The result is a public reputation trail for AI market intelligence. The agent is
-not a custodian and does not execute trades. It produces verifiable research
-artifacts that users can inspect before deciding what to do elsewhere.
+The result is a public reputation trail for AI market intelligence and agent
+advice. The agent is not a custodian and does not execute trades. It produces
+verifiable research artifacts that users can inspect before deciding what to do
+elsewhere.
 
 ## Why Mantle
 
-Mantle gives the agent an audit layer. A market call can be made in Predivex,
-hashed, anchored on Mantle Sepolia, and linked back to the live decision feed.
-That creates a path from AI insight to public proof to agent reputation.
+Mantle gives the agent an audit layer. A market call or concierge brief can be
+made in Predivex, hashed, anchored on Mantle Sepolia, and linked back to the
+live decision feed. That creates a path from AI insight to public proof to agent
+reputation.
 
 ## What Works Today
 
@@ -41,6 +44,7 @@ That creates a path from AI insight to public proof to agent reputation.
 - Agent id: `predivex-mantle-alpha-agent`
 - Signals: cross-venue spreads and momentum dislocations
 - ELFA enrichment: key status, trending narratives, and token-context signals
+- Trader concierge: inspect, monitor, context, risk, and proof-audit actions
 - Proofs: deterministic decision hashes
 - On-chain layer: `PredivexDecisionRegistry`
 - Reputation layer: scored calls track market movement after the anchor
@@ -50,19 +54,22 @@ That creates a path from AI insight to public proof to agent reputation.
 1. Predivex scans live market data across supported prediction-market venues.
 2. The Mantle Alpha Agent ranks opportunities by edge, confidence, liquidity,
    and signal type.
-3. Each decision payload is hashed into a deterministic `proofHash`.
-4. The anchor script records selected hashes in `PredivexDecisionRegistry` on
+3. The trader concierge turns those signals into next-step guidance and risk
+   guardrails.
+4. Each decision payload and concierge brief is hashed into a deterministic
+   `proofHash`.
+5. The anchor script records selected hashes in `PredivexDecisionRegistry` on
    Mantle Sepolia.
-5. The UI shows live calls, proof hashes, explorer links, and post-anchor
-   performance.
+6. The UI shows live calls, concierge guidance, proof hashes, explorer links,
+   and post-anchor performance.
 
 ## Track Fit
 
 Track: AI Alpha & Data.
 
-This is not a generic AI trading bot. It is a data and intelligence layer for a
-market category where timing, provenance, and reputation matter. Mantle turns
-the agent's output into verifiable public evidence.
+This is not a generic AI trading bot. It is a data, intelligence, and
+concierge layer for a market category where timing, provenance, and reputation
+matter. Mantle turns the agent's output into verifiable public evidence.
 
 ## Demo Links
 
@@ -90,27 +97,31 @@ data and ranks cross-venue spreads plus momentum dislocations.
 
 Each call includes edge, confidence, evidence, and a deterministic proof hash.
 
-3/ The proof hash is anchored on Mantle Sepolia through a simple decision
+3/ The trader concierge turns the raw signals into next steps: what to inspect,
+what to monitor, what outside context to read, which risk guardrails apply, and
+which Mantle proofs to audit.
+
+4/ The proof hash is anchored on Mantle Sepolia through a simple decision
 registry contract.
 
 Contract:
 `0x7DA2bC98E2392810a1f088955C65c72EBc76692A`
 
-4/ The demo links each anchored call to the Mantle explorer, so the signal can
+5/ The demo links each anchored call to the Mantle explorer, so the signal can
 be audited outside our UI.
 
 Live demo:
 `https://app.predivex.com/mantle-agent`
 
-5/ After anchoring, Predivex scores the agent against later market movement.
+6/ After anchoring, Predivex scores the agent against later market movement.
 That turns AI calls from black-box recommendations into a public reputation
 feed.
 
-6/ Safety boundary: no custody, no order execution, no financial advice.
+7/ Safety boundary: no custody, no order execution, no financial advice.
 
 The agent creates verifiable research artifacts only.
 
-7/ Demo video:
+8/ Demo video:
 `https://youtu.be/9sgV45369Vo`
 
 Backup videos are included in the public repo:
@@ -126,10 +137,12 @@ Track: AI Alpha & Data.
 ## DoraHacks Description
 
 Predivex Mantle Alpha Agent is a verifiable AI intelligence layer for prediction
-markets. It scans live cross-venue market data, emits ranked alpha calls with
-evidence and confidence, hashes every decision payload, anchors selected proof
-hashes on Mantle Sepolia, and tracks post-anchor movement to build an auditable
-agent reputation feed.
+markets and a trader concierge for prediction-market research. It scans live
+cross-venue market data, emits ranked alpha calls with evidence and confidence,
+turns them into inspect/monitor/context/risk/proof-audit actions, hashes every
+decision payload and concierge brief, anchors selected proof hashes on Mantle
+Sepolia, and tracks post-anchor movement to build an auditable agent reputation
+feed.
 
 The product is intentionally non-custodial. It does not execute trades or hold
 funds. Predivex provides market intelligence; Mantle provides the public proof
