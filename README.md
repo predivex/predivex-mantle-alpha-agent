@@ -21,6 +21,10 @@ deployment/anchoring scripts, demo artifacts, and public documentation.
 The Predivex Alpha Agent scans live prediction-market data and emits ranked
 market calls with evidence, confidence, and deterministic proof hashes.
 
+The live feed also includes ELFA-powered market-intelligence enrichment when
+credits are available, so reviewers can see both the Predivex prediction-market
+signals and the external AI/data context used by the hackathon build.
+
 This repository shows how selected agent calls are anchored to Mantle Sepolia
 through `PredivexDecisionRegistry`. The on-chain record does not custody funds,
 execute trades, or provide financial advice. It records verifiable research

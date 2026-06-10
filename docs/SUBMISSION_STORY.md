@@ -17,6 +17,11 @@ cross-venue spreads and violent probability moves, generates a deterministic
 proof hash for each decision, anchors selected calls on Mantle Sepolia, and then
 scores the agent against later market movement.
 
+For Phase II, the live feed also includes ELFA-powered market-intelligence
+enrichment when credits are available. That makes the agent a stronger
+AI Alpha & Data submission: Predivex contributes prediction-market signal
+detection, while ELFA adds external narrative and token-context signals.
+
 The result is a public reputation trail for AI market intelligence. The agent is
 not a custodian and does not execute trades. It produces verifiable research
 artifacts that users can inspect before deciding what to do elsewhere.
@@ -35,6 +40,7 @@ That creates a path from AI insight to public proof to agent reputation.
 - Network: Mantle Sepolia, chain id `5003`
 - Agent id: `predivex-mantle-alpha-agent`
 - Signals: cross-venue spreads and momentum dislocations
+- ELFA enrichment: key status, trending narratives, and token-context signals
 - Proofs: deterministic decision hashes
 - On-chain layer: `PredivexDecisionRegistry`
 - Reputation layer: scored calls track market movement after the anchor
@@ -104,7 +110,9 @@ feed.
 
 The agent creates verifiable research artifacts only.
 
-7/ Demo video: `<add video link>`
+7/ Demo videos are included in the public repo:
+`demo/predivex-mantle-alpha-agent-demo.mp4`
+`demo/predivex-mantle-alpha-agent-deployment-demo.mp4`
 
 DoraHacks: `https://dorahacks.io/buidl/44565`
 
