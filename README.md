@@ -8,6 +8,7 @@ deployment/anchoring scripts, demo artifacts, and public documentation.
 
 ## Live Demo
 
+- DoraHacks BUIDL: https://dorahacks.io/buidl/44565
 - App: https://app.predivex.com/mantle-agent
 - API: https://app.predivex.com/api/mantle/alpha-agent
 - Contract: `0x7DA2bC98E2392810a1f088955C65c72EBc76692A`

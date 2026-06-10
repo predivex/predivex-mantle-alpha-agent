@@ -60,6 +60,7 @@ the agent's output into verifiable public evidence.
 
 ## Demo Links
 
+- DoraHacks BUIDL: `https://dorahacks.io/buidl/44565`
 - Demo page: `https://app.predivex.com/mantle-agent`
 - API endpoint: `https://app.predivex.com/api/mantle/alpha-agent`
 - Contract explorer:
@@ -104,6 +105,8 @@ feed.
 The agent creates verifiable research artifacts only.
 
 7/ Demo video: `<add video link>`
+
+DoraHacks: `https://dorahacks.io/buidl/44565`
 
 GitHub: `https://github.com/predivex/predivex-mantle-alpha-agent`
 
