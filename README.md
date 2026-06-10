@@ -36,6 +36,14 @@ Example anchored decisions:
 - `0xffeed79888703679bda8e4caf6c602f8c0c1b3b760dcef7996f4ca0c4d9d704c`
 - `0x7407c841de176d541f5f3d9cc2b50dca6f503acd83cfa8197f897e9e4db2fe1c`
 
+## Judging Alignment
+
+Primary track: AI Alpha & Data.
+
+The project is mapped against both Mantle's general scorecard and the
+track-specific Mirana Ventures scorecard in
+`docs/JUDGING_ALIGNMENT.md`.
+
 ## What This Does
 
 The Predivex Alpha Agent scans live prediction-market data and emits ranked

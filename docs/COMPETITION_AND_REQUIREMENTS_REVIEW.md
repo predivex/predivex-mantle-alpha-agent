@@ -1,6 +1,6 @@
 # Competition And Requirements Review
 
-Checked: 2026-06-10.
+Checked: 2026-06-11.
 
 ## Official Requirements
 
@@ -29,13 +29,18 @@ General track scorecard:
 
 Alpha & Data track-specific scorecard has two paths:
 
-- Data & Analytics: insight value, data source quality, investment utility, scalability.
-- Trading Strategy: strategy alpha, verifiability, investment potential, risk management.
+- Data & Analytics: insight value 15, data source quality 15,
+  investment utility 12, scalability and sustainability 8.
+- Trading Strategy: strategy alpha 15, verifiability and auditability 15,
+  investment potential 12, risk management 8.
 
 Best fit for Predivex:
 
 - Track: AI Alpha & Data.
 - Path: Trading Strategy, with Data & Analytics positioning as secondary.
+- Secondary track narrative: AI Trading & Strategy is acceptable because the
+  project provides verifiable strategy signals, but the strongest fit remains
+  Alpha & Data because Predivex is a prediction-market intelligence layer.
 
 ## Predivex Fit
 
@@ -48,6 +53,8 @@ Strong:
 - Selected decisions are anchored on Mantle.
 - Agent output is scored after anchoring.
 - The story is differentiated from a generic AI trading bot.
+- Public docs now map the project directly to the official general scorecard
+  plus the Alpha & Data track-specific scorecard.
 
 Weak:
 
