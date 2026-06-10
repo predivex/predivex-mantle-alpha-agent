@@ -11,10 +11,31 @@ deployment/anchoring scripts, demo artifacts, and public documentation.
 - DoraHacks BUIDL: https://dorahacks.io/buidl/44565
 - App: https://app.predivex.com/mantle-agent
 - API: https://app.predivex.com/api/mantle/alpha-agent
+- Demo video:
+  https://github.com/predivex/predivex-mantle-alpha-agent/blob/main/demo/predivex-mantle-alpha-agent-deployment-demo.mp4
 - Contract: `0x7DA2bC98E2392810a1f088955C65c72EBc76692A`
 - Explorer:
   https://explorer.sepolia.mantle.xyz/address/0x7DA2bC98E2392810a1f088955C65c72EBc76692A
 - Network: Mantle Sepolia, chain id `5003`
+
+## Submission Completeness
+
+This repo is structured for hackathon review and automated screening:
+
+- Public GitHub repository: yes.
+- Public live demo: yes, `https://app.predivex.com/mantle-agent`.
+- Public API endpoint: yes, `https://app.predivex.com/api/mantle/alpha-agent`.
+- Demo video: yes, committed under `demo/`.
+- Smart contract: yes, deployed on Mantle Sepolia.
+- Transaction-producing on-chain component: yes,
+  `PredivexDecisionRegistry.recordDecision`.
+- Live AI/data output: yes, ranked prediction-market calls with ELFA enrichment.
+- Safety boundary: no custody, no order execution, no financial advice.
+
+Example anchored decisions:
+
+- `0xffeed79888703679bda8e4caf6c602f8c0c1b3b760dcef7996f4ca0c4d9d704c`
+- `0x7407c841de176d541f5f3d9cc2b50dca6f503acd83cfa8197f897e9e4db2fe1c`
 
 ## What This Does
 
