@@ -53,8 +53,8 @@ Strong:
 - Selected decisions are anchored on Mantle.
 - Agent output is scored after anchoring.
 - The story is differentiated from a generic AI trading bot.
-- Public docs now map the project directly to the official general scorecard
-  plus the Alpha & Data track-specific scorecard.
+- Public docs now summarize the project fit for the Mantle ecosystem and the
+  AI Alpha & Data track.
 
 Weak:
 
