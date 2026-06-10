@@ -16,7 +16,8 @@ Alpha Agent turns that stream into a research-copilot workflow. It detects
 cross-venue spreads and violent probability moves, generates ranked market
 calls, explains what to inspect or monitor next, creates deterministic proof
 hashes for both decisions and the research brief, anchors selected calls on
-Mantle Sepolia, and then scores the agent against later market movement.
+Mantle Sepolia, routes each call into concrete Predivex YES/NO market legs, and
+then scores the agent against later market movement.
 
 For Phase II, the live feed also includes ELFA-powered market-intelligence
 enrichment when credits are available. That makes the agent a stronger
@@ -43,6 +44,8 @@ reputation.
 - Network: Mantle Sepolia, chain id `5003`
 - Agent id: `predivex-mantle-alpha-agent`
 - Signals: cross-venue spreads and momentum dislocations
+- Alpha Router: concrete YES/NO legs that open the selected Predivex market
+  trading desk
 - ELFA enrichment: key status, trending narratives, and token-context signals
 - Research brief: inspect, monitor, context, risk, and proof-audit items
 - Proofs: deterministic decision hashes
@@ -56,11 +59,13 @@ reputation.
    and signal type.
 3. The research copilot turns those signals into next-step context and risk
    boundaries.
-4. Each decision payload and research brief is hashed into a deterministic
+4. The Alpha Router exposes concrete market legs and selected YES/NO sides in
+   Predivex.
+5. Each decision payload and research brief is hashed into a deterministic
    `proofHash`.
-5. The anchor script records selected hashes in `PredivexDecisionRegistry` on
+6. The anchor script records selected hashes in `PredivexDecisionRegistry` on
    Mantle Sepolia.
-6. The UI shows live calls, research-brief guidance, proof hashes, explorer links,
+7. The UI shows live calls, Alpha Router links, research-brief guidance, proof hashes, explorer links,
    and post-anchor performance.
 
 ## Track Fit

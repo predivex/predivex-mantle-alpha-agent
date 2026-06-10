@@ -23,6 +23,8 @@ review.
 - The public API returns live ranked decisions.
 - The agent scans prediction-market data and detects cross-venue spreads plus
   momentum dislocations.
+- Each call exposes an Alpha Router trade plan with concrete YES/NO legs that
+  open the relevant Predivex market trading desk and mark the selected side.
 - The research copilot turns signals into inspect, monitor, context, risk, and
   proof-audit brief items with its own proof hash.
 - The live feed includes ELFA-powered market-intelligence enrichment when

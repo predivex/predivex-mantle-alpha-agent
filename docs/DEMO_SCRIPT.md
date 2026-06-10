@@ -14,6 +14,11 @@ The agent scans live markets across venues and ranks two signal types:
 cross-venue spreads and momentum dislocations. Each call includes the market,
 side, edge, confidence, evidence, and a deterministic proof hash.
 
+For actionable review, each call also has an Alpha Router. A spread call shows
+the concrete YES/NO legs and opens the exact Predivex market trading desk with
+the selected side marked. The agent routes the setup; the user still confirms
+or rejects manually.
+
 The important part is that the call is not just shown in our UI. The proof hash
 is anchored to Mantle Sepolia through a simple decision registry contract. The
 demo links each anchored call to the Mantle explorer, so anyone can verify that
@@ -33,10 +38,13 @@ reputation layer.
 2. Show live scan metrics: markets scanned, agent calls, best edge, scored
    calls, latency.
 3. Show the decision feed: evidence, venue pair, confidence, proof hash.
-4. Show anchored calls with Mantle transaction links.
-5. Open one transaction on Mantle Sepolia explorer.
-6. Return to the proof state panel: contract, anchored count, scored count.
-7. Close with the one-liner:
+4. Click an Alpha Router `Buy YES` or `Buy NO` leg and show it opens the
+   Predivex market trading desk with the Mantle-selected side visible.
+5. Return to the agent feed and show anchored calls with Mantle transaction
+   links.
+6. Open one transaction on Mantle Sepolia explorer.
+7. Return to the proof state panel: contract, anchored count, scored count.
+8. Close with the one-liner:
 
 > Predivex is the prediction-market intelligence terminal; Mantle is the
 > verifiable proof and reputation layer for AI market calls.

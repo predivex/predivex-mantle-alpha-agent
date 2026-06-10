@@ -30,6 +30,8 @@ This repo is structured for hackathon review and automated screening:
   `PredivexDecisionRegistry.recordDecision`.
 - Live AI/data output: yes, ranked prediction-market calls, ELFA enrichment,
   and a research brief with its own proof hash.
+- Live Alpha Router: yes, each call exposes concrete YES/NO market legs that
+  open the relevant Predivex market trading desk with the selected side marked.
 - Safety boundary: no custody, no order execution, no financial advice.
 
 Example anchored decisions:
@@ -48,6 +50,10 @@ The project fit for Mantle and the AI Alpha & Data track is summarized in
 
 The Predivex Alpha Agent scans live prediction-market data and emits ranked
 market calls with evidence, confidence, and deterministic proof hashes.
+Each call also includes an Alpha Router trade plan: concrete YES/NO legs for
+cross-venue spreads or a selected side for momentum signals. Those links open
+the matching Predivex market route and focus the trading desk, while the user
+still confirms, rejects, or routes out manually.
 
 The live feed also includes ELFA-powered market-intelligence enrichment when
 credits are available, so reviewers can see both the Predivex prediction-market
@@ -62,10 +68,12 @@ artifacts so each call can be audited outside the Predivex UI.
 
 1. Predivex scans live prediction markets.
 2. The alpha agent emits decision payloads and deterministic `proofHash` values.
-3. `anchor-decisions.ts` fetches the public agent feed.
-4. `PredivexDecisionRegistry.recordDecision` stores the proof hash, decision id,
+3. The UI renders Alpha Router legs that open the relevant Predivex market
+   trading desk with `side=yes` or `side=no` selected.
+4. `anchor-decisions.ts` fetches the public agent feed.
+5. `PredivexDecisionRegistry.recordDecision` stores the proof hash, decision id,
    metadata URI, recorder, and timestamp on Mantle Sepolia.
-5. The live UI links anchored calls to Mantle explorer transactions and shows
+6. The live UI links anchored calls to Mantle explorer transactions and shows
    post-anchor scoring.
 
 ## Run Locally
