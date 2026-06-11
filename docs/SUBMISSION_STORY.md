@@ -18,6 +18,9 @@ what to inspect or monitor next, adds context and risk boundaries, creates
 deterministic proof hashes for both decisions and the agent brief, anchors
 selected calls on Mantle Sepolia, routes each call into concrete Predivex
 YES/NO market legs, and then scores the agent against later market movement.
+The same intelligence layer now appears directly on market pages as a concise
+agent brief with scanner context, risk flags, related-market cross-checks,
+route hints, and a deterministic proof hash.
 
 For Phase II, the live feed also includes ELFA-powered market-intelligence
 enrichment when credits are available. That makes the agent a stronger
@@ -49,6 +52,8 @@ reputation.
   trading desk
 - ELFA enrichment: key status, trending narratives, and token-context signals
 - Agent brief: inspect, monitor, context, risk, and proof-audit items
+- Market-page brief: summary, signal snapshot, risk flags, related-market
+  cross-checks, suggested action, YES/NO route hints, and proof hash
 - Proofs: deterministic decision hashes
 - On-chain layer: `PredivexDecisionRegistry`
 - Reputation layer: scored calls track market movement after the anchor

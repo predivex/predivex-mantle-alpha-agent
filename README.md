@@ -33,6 +33,8 @@ This repo is structured for hackathon review and automated screening:
   proof hash.
 - Live Alpha Router: yes, each call exposes concrete YES/NO market legs that
   open the relevant Predivex market trading desk with the selected side marked.
+- Market-level intelligence brief: yes, market pages now show scanner context,
+  risk flags, related-market cross-checks, route hints, and a proof hash.
 - Safety boundary: no custody, no order execution, no financial advice.
 
 Example anchored decisions:
@@ -57,6 +59,10 @@ Each call also includes an Alpha Router trade plan: concrete YES/NO legs for
 cross-venue spreads or a selected side for momentum signals. Those links open
 the matching Predivex market route and focus the trading desk, while the user
 still confirms, rejects, or routes out manually.
+On each market page, the Market Intelligence brief adds a local agent view:
+summary, signal snapshot, risk flags, related-market cross-checks, suggested
+actions, YES/NO route hints, and a deterministic proof hash ready for Mantle
+reputation workflows.
 
 The live feed also includes ELFA-powered market-intelligence enrichment when
 credits are available, so reviewers can see both the deterministic Predivex

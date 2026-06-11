@@ -29,6 +29,9 @@ review.
   open the relevant Predivex market trading desk and mark the selected side.
 - The intelligence agent turns signals into inspect, monitor, context, risk, and
   proof-audit brief items with its own proof hash.
+- Market pages now show a market-level intelligence brief with scanner context,
+  risk flags, related-market cross-checks, suggested action, YES/NO route hints,
+  and a proof hash.
 - The live feed includes ELFA-powered market-intelligence enrichment when
   credits are available.
 - Each decision has a deterministic proof hash.
