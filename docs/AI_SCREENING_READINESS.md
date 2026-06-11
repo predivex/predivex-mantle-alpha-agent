@@ -21,11 +21,13 @@ review.
 
 - The public UI loads a live Mantle Alpha Agent dashboard.
 - The public API returns live ranked decisions.
-- The agent scans prediction-market data and detects cross-venue spreads plus
-  momentum dislocations.
+- Deterministic scanners read prediction-market data and detect cross-venue
+  spread candidates plus momentum dislocations.
+- The agent ranks, explains, risk-checks, routes, and prepares those candidates
+  for Mantle proof anchoring.
 - Each call exposes an Alpha Router trade plan with concrete YES/NO legs that
   open the relevant Predivex market trading desk and mark the selected side.
-- The research copilot turns signals into inspect, monitor, context, risk, and
+- The intelligence agent turns signals into inspect, monitor, context, risk, and
   proof-audit brief items with its own proof hash.
 - The live feed includes ELFA-powered market-intelligence enrichment when
   credits are available.

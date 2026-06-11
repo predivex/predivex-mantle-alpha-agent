@@ -11,13 +11,13 @@ Prediction markets are fragmented across venues. Traders need to compare odds,
 detect dislocations, and understand whether an AI signal has a real track
 record. Most AI trading demos stop at a black-box recommendation.
 
-Predivex already scans live prediction-market data across venues. The Mantle
-Alpha Agent turns that stream into a research-copilot workflow. It detects
-cross-venue spreads and violent probability moves, generates ranked market
-calls, explains what to inspect or monitor next, creates deterministic proof
-hashes for both decisions and the research brief, anchors selected calls on
-Mantle Sepolia, routes each call into concrete Predivex YES/NO market legs, and
-then scores the agent against later market movement.
+Predivex already scans live prediction-market data across venues with
+deterministic code. The Mantle Alpha Agent turns that stream into a
+market-intelligence workflow: it ranks spread and momentum candidates, explains
+what to inspect or monitor next, adds context and risk boundaries, creates
+deterministic proof hashes for both decisions and the agent brief, anchors
+selected calls on Mantle Sepolia, routes each call into concrete Predivex
+YES/NO market legs, and then scores the agent against later market movement.
 
 For Phase II, the live feed also includes ELFA-powered market-intelligence
 enrichment when credits are available. That makes the agent a stronger
@@ -43,21 +43,23 @@ reputation.
 - Contract: `0x7DA2bC98E2392810a1f088955C65c72EBc76692A`
 - Network: Mantle Sepolia, chain id `5003`
 - Agent id: `predivex-mantle-alpha-agent`
-- Signals: cross-venue spreads and momentum dislocations
+- Signals: deterministic cross-venue spread candidates and momentum
+  dislocations
 - Alpha Router: concrete YES/NO legs that open the selected Predivex market
   trading desk
 - ELFA enrichment: key status, trending narratives, and token-context signals
-- Research brief: inspect, monitor, context, risk, and proof-audit items
+- Agent brief: inspect, monitor, context, risk, and proof-audit items
 - Proofs: deterministic decision hashes
 - On-chain layer: `PredivexDecisionRegistry`
 - Reputation layer: scored calls track market movement after the anchor
 
 ## Architecture
 
-1. Predivex scans live market data across supported prediction-market venues.
-2. The Mantle Alpha Agent ranks opportunities by edge, confidence, liquidity,
-   and signal type.
-3. The research copilot turns those signals into next-step context and risk
+1. Deterministic Predivex scanners read live market data across supported
+   prediction-market venues.
+2. The Mantle Alpha Agent ranks candidates by edge, confidence, liquidity,
+   semantic fit, risk, and signal type.
+3. The intelligence agent turns those signals into next-step context and risk
    boundaries.
 4. The Alpha Router exposes concrete market legs and selected YES/NO sides in
    Predivex.
@@ -65,7 +67,7 @@ reputation.
    `proofHash`.
 6. The anchor script records selected hashes in `PredivexDecisionRegistry` on
    Mantle Sepolia.
-7. The UI shows live calls, Alpha Router links, research-brief guidance, proof hashes, explorer links,
+7. The UI shows live calls, Alpha Router links, agent-brief guidance, proof hashes, explorer links,
    and post-anchor performance.
 
 ## Track Fit
@@ -97,12 +99,13 @@ artifacts only.
 Predivex is the prediction-market intelligence terminal; Mantle is the
 verifiable proof and reputation layer for AI market calls.
 
-2/ Prediction markets are fragmented across venues. The agent scans live market
-data and ranks cross-venue spreads plus momentum dislocations.
+2/ Prediction markets are fragmented across venues. Deterministic scanners find
+cross-venue spreads plus momentum dislocations; the agent ranks and explains
+what matters.
 
 Each call includes edge, confidence, evidence, and a deterministic proof hash.
 
-3/ The research copilot turns the raw signals into a brief: what to inspect,
+3/ The intelligence agent turns raw scanner signals into a brief: what to inspect,
 what moved, what outside context matters, which risk boundary applies, and which
 Mantle proofs to audit.
 
@@ -141,11 +144,11 @@ Track: AI Alpha & Data.
 
 ## DoraHacks Description
 
-Predivex Mantle Alpha Agent is a verifiable AI intelligence layer and research
-copilot for prediction markets. It scans live cross-venue market data, emits
-ranked alpha calls with evidence and confidence, turns them into
+Predivex Mantle Alpha Agent is a verifiable intelligence layer for prediction
+markets. Deterministic scanners read live cross-venue market data; the agent
+emits ranked alpha calls with evidence and confidence, turns them into
 inspect/monitor/context/risk/proof-audit brief items, hashes every decision
-payload and research brief, anchors selected proof hashes on Mantle Sepolia,
+payload and agent brief, anchors selected proof hashes on Mantle Sepolia,
 and tracks post-anchor movement to build an auditable agent reputation feed.
 
 The product is intentionally non-custodial. It does not execute trades or hold

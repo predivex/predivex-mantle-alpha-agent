@@ -28,8 +28,9 @@ This repo is structured for hackathon review and automated screening:
 - Smart contract: yes, deployed on Mantle Sepolia.
 - Transaction-producing on-chain component: yes,
   `PredivexDecisionRegistry.recordDecision`.
-- Live AI/data output: yes, ranked prediction-market calls, ELFA enrichment,
-  and a research brief with its own proof hash.
+- Live AI/data output: yes, deterministic scanner candidates, agent-ranked
+  prediction-market calls, ELFA enrichment, and an agent brief with its own
+  proof hash.
 - Live Alpha Router: yes, each call exposes concrete YES/NO market legs that
   open the relevant Predivex market trading desk with the selected side marked.
 - Safety boundary: no custody, no order execution, no financial advice.
@@ -48,16 +49,19 @@ The project fit for Mantle and the AI Alpha & Data track is summarized in
 
 ## What This Does
 
-The Predivex Alpha Agent scans live prediction-market data and emits ranked
-market calls with evidence, confidence, and deterministic proof hashes.
+Predivex scanners read live prediction-market data and produce deterministic
+spread and momentum candidates. The Mantle Alpha Agent turns those candidates
+into ranked market calls with evidence, confidence, risk context, and
+deterministic proof hashes.
 Each call also includes an Alpha Router trade plan: concrete YES/NO legs for
 cross-venue spreads or a selected side for momentum signals. Those links open
 the matching Predivex market route and focus the trading desk, while the user
 still confirms, rejects, or routes out manually.
 
 The live feed also includes ELFA-powered market-intelligence enrichment when
-credits are available, so reviewers can see both the Predivex prediction-market
-signals and the external AI/data context used by the hackathon build.
+credits are available, so reviewers can see both the deterministic Predivex
+prediction-market signals and the external AI/data context used by the
+hackathon build.
 
 This repository shows how selected agent calls are anchored to Mantle Sepolia
 through `PredivexDecisionRegistry`. The on-chain record does not custody funds,
@@ -66,8 +70,9 @@ artifacts so each call can be audited outside the Predivex UI.
 
 ## Architecture
 
-1. Predivex scans live prediction markets.
-2. The alpha agent emits decision payloads and deterministic `proofHash` values.
+1. Deterministic Predivex scanners read live prediction markets.
+2. The alpha agent ranks candidates, adds context/risk, and emits decision
+   payloads with deterministic `proofHash` values.
 3. The UI renders Alpha Router legs that open the relevant Predivex market
    trading desk with `side=yes` or `side=no` selected.
 4. `anchor-decisions.ts` fetches the public agent feed.
@@ -112,9 +117,9 @@ git.
 
 Primary track: AI Alpha & Data.
 
-Positioning: Predivex is the prediction-market intelligence terminal and
-research copilot; Mantle is the verifiable proof and reputation layer for AI
-market calls and research artifacts.
+Positioning: Predivex is the prediction-market intelligence terminal; the
+Mantle Alpha Agent is the verifiable market-intelligence layer for AI calls and
+research artifacts.
 
 ## Safety Boundary
 

@@ -10,9 +10,10 @@ the DoraHacks deployment milestone requires a demo video of at least 2 minutes.
 Predivex is the trading terminal and intelligence layer for prediction markets.
 For the Mantle Turing Test Hackathon, we added a verifiable AI alpha agent.
 
-The agent scans live markets across venues and ranks two signal types:
-cross-venue spreads and momentum dislocations. Each call includes the market,
-side, edge, confidence, evidence, and a deterministic proof hash.
+Deterministic Predivex scanners read live markets across venues and surface two
+signal types: cross-venue spreads and momentum dislocations. The agent ranks
+those candidates, adds context and risk boundaries, and emits calls with the
+market, side, edge, confidence, evidence, and a deterministic proof hash.
 
 For actionable review, each call also has an Alpha Router. A spread call shows
 the concrete YES/NO legs and opens the exact Predivex market trading desk with
@@ -37,7 +38,8 @@ reputation layer.
 1. Open `https://app.predivex.com/mantle-agent`.
 2. Show live scan metrics: markets scanned, agent calls, best edge, scored
    calls, latency.
-3. Show the decision feed: evidence, venue pair, confidence, proof hash.
+3. Show the decision feed: deterministic scanner signal, agent evidence,
+   venue pair, confidence, proof hash.
 4. Click an Alpha Router `Buy YES` or `Buy NO` leg and show it opens the
    Predivex market trading desk with the Mantle-selected side visible.
 5. Return to the agent feed and show anchored calls with Mantle transaction
